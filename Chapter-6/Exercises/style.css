@@ -2,8 +2,8 @@
     padding: 10px;
     width: 400px;
     height: auto;
-    border: 1px solid #a32756;
-    background-color: #f8bccb;
+    border: 1px solid #5027a3;
+    background-color: #c9bcf8;
     margin: 10px;
     border-radius: 10px;
     text-align: center;
@@ -11,8 +11,8 @@
 }
 
 .result{
-    border: 1px solid #a32756;
-    background-color: white;
+    border: 1px solid #4027a3;
+    background-color: rgba(255, 255, 255, 0.485);
     color: black;
     padding: 10px;
     width: 300px;
