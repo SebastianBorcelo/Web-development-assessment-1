@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="petrol.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Petrol Calculator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="ptrlBox">
+  <main class="ptrlBox">
     <h1>Petrol Calculator</h1>
-<label for="price">Price per litre:</label>
-<input type="number" id="price" min="10" max="10000" step="0.5">
-<br>
-<br>
-<button onclick="computePetrol()">Calculate</button><br><br>
-<div class="result" id="output"></div>
 
-<script>
-function computePetrol(){
-    const pricePL = parseFloat(document.getElementById('price').value);
-    const outputBox = document.getElementById('output');
+    <form id="petrolForm">
+      <label for="price">Price per litre:</label>
+      <input type="number" id="price" name="price" min="10" max="10000" step="0.5" required />
+      <br><br>
+      <button type="submit">Calculate</button>
+    </form>
 
-    const litresPurchased = 50 / pricePL; 
-    outputBox.innerText = ` ${litresPurchased.toFixed(2)} L`;
-}
+    <div class="result" id="output"></div>
+  </main>
 
-</script>
+  <script>
+    document.getElementById("petrolForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const pricePL = parseFloat(document.getElementById("price").value);
+      const outputBox = document.getElementById("output");
+
+      if (!pricePL || pricePL <= 0) {
+        outputBox.textContent = "Please enter a valid price.";
+        return;
+      }
+
+      const litresPurchased = 50 / pricePL;
+      outputBox.textContent = `${litresPurchased.toFixed(2)} L`;
+    });
+  </script>
+
 </body>
 </html>
