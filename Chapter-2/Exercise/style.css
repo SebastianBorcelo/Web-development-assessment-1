@@ -1,0 +1,96 @@
+/* Reset some default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 3em;
+    color: #c62828; /* One Piece red */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #001f3f; /* deep navy */
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #0074D9;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #0074D9;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95em;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ccc;
+}
+
+footer a {
+    display: block;
+    color: #0074D9;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Optional: Dark overlay div if you plan to use it for styling */
+.dark {
+    display: none; /* or adjust if you plan to style it later */
+}
