@@ -1,0 +1,49 @@
+body {
+    margin: 30px; /* Margin tag is used so that most of the page's focus is on the center */
+    font-size: 100%; /* Most of the page's text will follow the font size and font family */
+    font-family: 'Arial', sans-serif; /* Changed to a more versatile font */
+    background: hsl(218, 100%, 88%); /* Light blue background for a fresh feel */
+}
+
+h1 {
+    color: rgb(255, 255, 255);                   
+    font-family: 'Arial', sans-serif; /* Changed to Arial for consistency */
+    font-size: 300%;
+    padding: 15px; /* The padding tag is used to make the background larger than the text itself */
+    background: rgb(215, 26, 26); /* Vibrant red background */
+    text-align: center; /* Primary focus of this section is to accentuate the importance of the dish */
+    border: 2px solid #ffcc00; /* Gold border for a touch of elegance */
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
+
+p {
+    font-family: 'Times New Roman', serif; /* Keeping the traditional feel */
+    font-size: 25px;
+    text-align: justify; /* Used to justify the long description of the dish as to not look cluttered */
+    text-justify: inter-word;
+    line-height: 1.6; /* Improved readability */
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 2px solid #ffcc00; /* Gold border for consistency */
+    padding-bottom: 10px; /* Adds space below the headings */
+    color: rgb(215, 26, 26); /* Matching color with h1 */
+}
+
+.recipe-container {
+    display: flex;                      
+    justify-content: space-between;    
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.ingredients, .instructions {
+    width: 45%; /* Adjusted width for better spacing */
+    font-size: 30px;
+    background: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    padding: 15px; /* Padding for inner spacing */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
