@@ -1,0 +1,35 @@
+div{ border: solid 0px;
+
+}
+img{ margin: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    box-shadow: 20px 20px 20px rgba(10, 10, 10, 10);
+}
+.img01{ position: static;
+    width: 200px;
+    height: 300px;
+}
+.img02{ position: static;
+    width: 200px;
+    height: 300px;
+}
+.img03{ position: static;
+    width: 200px;
+    height: 300px;
+}
+p {
+    text-align: center;
+}
+
+.container{ height: 3000px;
+background-color: rgb(240, 208, 224);
+display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container2{ border: solid brown 0px;
+height: auto;
+background-color:crimson;}
